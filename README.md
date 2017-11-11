@@ -30,6 +30,8 @@ players. Once the submit button is clicked, the application will randomly draw a
 the screen) and then it will deal 5 random cards out of the remaining 51 in the deck for each player.
 Each hand is also shown on the screen. Once all cards are dealt, the winner is shown on the screen.
 
+# tip
+game using browser localStorage for saving played games and can retrieve card values as well as winner.
 # how to start:
 
     npm install
