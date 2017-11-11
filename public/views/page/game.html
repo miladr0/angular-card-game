@@ -1,0 +1,32 @@
+<!-- only need a height for layout 4 -->
+<div style="min-height: 200px">
+
+    <div class="row p-a-3" id="content">
+        <div class="col-sm-4">
+            <h4> Card chosen:</h4>
+            <div class="col-sm-6" id="wild-card"></div>
+        </div>
+        <div class="col-sm-4">
+            <h4>Chose number of Players: </h4>
+            <input class="form-control" type="number" placeholder="I.e: 4"
+                   ng-model="totalPlayer" min="2" max="10" step="1" required>
+            <br>
+            <button class="form-control btn-primary" ng-click="startGame()">Start</button>
+        </div>
+        <div class="col-sm-4 " class="players">
+            <h4>Winner is: </h4>
+            <p id="winner-spec">{{winnerSpec.name}}</p>
+            <hr>
+            <h4>played Games:</h4>
+            <select ng-change="onRetrievePlayedGame()" ng-model="savedSlot"
+                    ng-options="slot.winner.name for slot in allGameData"
+                    class="form-control">
+
+            </select>
+
+        </div>
+    </div>
+
+    <div class="game-deck"></div>
+</div>
+

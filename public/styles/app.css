@@ -1,0 +1,6 @@
+.game-deck { text-align: center;}
+#content{background: rgba(76, 152, 207, 0.46)}
+#winner-spec { color: #ec0c54 ;font-size:1.8rem}
+.player { margin: 5px 25px; text-align: center; display: inline-block; }
+.playerName { margin: 8px; color: #5d3dbe; }
+.card { padding: 10px; background-color: #33ffb4; border: 1px solid #049379; }

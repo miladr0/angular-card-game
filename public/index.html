@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>House of cards</title>
+  <meta name="description" content="Card game, Angular, AngularJS" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+
+  <!-- style -->
+
+  <link rel="stylesheet" href="styles/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="styles/app.css" type="text/css">
+</head>
+<body ng-app="app" ng-controller="AppCtrl" class="@{{app.setting.bg}}" ng-class="{'container': app.setting.boxed, 'ie': isIE,'smart': isSmart}">
+<div class="app" ui-view></div>
+<!-- jQuery -->
+<script src="libs/jquery/jquery/dist/jquery.js"></script>
+<script src="libs/js/underscore/underscore-min.js"></script>
+<!-- Bootstrap -->
+<script src="libs/jquery/tether/dist/js/tether.min.js"></script>
+<script src="libs/jquery/bootstrap/dist/js/bootstrap.js"></script>
+<!-- Angular -->
+<script src="libs/angular/angular/angular.js"></script>
+<!-- router -->
+<script src="libs/angular/angular-ui-router/release/angular-ui-router.js"></script>
+<!-- storage -->
+<script src="libs/angular/ngstorage/ngStorage.js"></script>
+<!-- utils -->
+<script src="libs/angular/angular-ui-utils/ui-utils.js"></script>
+<!-- lazyload -->
+<script src="libs/angular/oclazyload/dist/ocLazyLoad.js"></script>
+
+<!-- App -->
+<script src="scripts/app.js"></script>
+<script src="scripts/config.lazyload.js"></script>
+<script src="scripts/config.router.js"></script>
+<script src="scripts/app.ctrl.js"></script>
+
+
+<script src="scripts/services/ngstore.js"></script>
+<script src="scripts/services/ui-load.js"></script>
+</body>
+</html>
