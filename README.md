@@ -29,3 +29,9 @@ The game is to be developed as a web app with a simple text input that would acc
 players. Once the submit button is clicked, the application will randomly draw a wild card (displayed on
 the screen) and then it will deal 5 random cards out of the remaining 51 in the deck for each player.
 Each hand is also shown on the screen. Once all cards are dealt, the winner is shown on the screen.
+
+#how to start:
+npm install
+npm start
+
+demo: http://house-of-cards.openode.io
